@@ -29,8 +29,13 @@
 
         </div>
 
-        <div class="footer mt-auto bg-dark text-light">
-            <p>Footer</p>
+        <div class="footer mt-auto bg-dark text-light d-flex justify-content-between">
+            <p>&nbsp;</p>
+            <p>
+                <a href="https://github.com/noahheck/asswords">
+                    <span class="bi-github"></span> Github
+                </a>
+            </p>
         </div>
 
     </body>

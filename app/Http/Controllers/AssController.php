@@ -11,6 +11,13 @@ class AssController extends Controller
     {
         $word = $wordFinder->randomAssWord();
 
-        return view('ass', compact('word'));
+        $dailyWord = $request->cookie('daily');
+
+        if (!$dailyWord) {
+            $dailyWord = $wordFinder->randomAssWord();
+            \Cookie::queue('daily', $dailyWord, 24 * 60);
+        }
+
+        return  view('ass', compact('word', 'dailyWord'));
     }
 }

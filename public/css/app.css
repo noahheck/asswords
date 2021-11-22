@@ -4,3 +4,18 @@
 body {
   padding-top: 60px;
 }
+
+.footer {
+  padding: 4px;
+}
+.footer p {
+  padding: 0;
+  margin: 0;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a,
+.footer a:visited {
+  color: #fff;
+}
