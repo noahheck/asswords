@@ -37,10 +37,13 @@
         </div>
 
         <div class="footer mt-auto bg-dark text-light d-flex justify-content-between">
-            <p>&nbsp;</p>
+            <p>&copy {{ date('Y') }} asswords.com</p>
             <p>
                 <a href="https://github.com/noahheck/asswords">
                     <span class="bi-github"></span> Github
+                </a>
+                <a href="https://twitter.com/ass_words" class="ms-2">
+                    <span class="bi-twitter"></span> Twitter
                 </a>
             </p>
         </div>
