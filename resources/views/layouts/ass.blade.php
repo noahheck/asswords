@@ -4,6 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <meta property="og:url" content="{{ url() ->current() }}">
+        <meta property="og:title" content="Ass Words">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Ass Words as a service - Display an Ass Word every time you visit the site!!!">
+        <meta property="og:image" content="">
+
+
         <title>Ass Words</title>
 
         <!-- Styles -->
