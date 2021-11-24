@@ -4,17 +4,20 @@ namespace App;
 
 class WordFinder
 {
-    public function __construct()
-    {
+    /**
+     * @var WordProvider
+     */
+    private $wordProvider;
 
+    public function __construct(WordProvider $wordProvider)
+    {
+        $this->wordProvider = $wordProvider;
     }
 
     public function randomAssWord()
     {
-        $asswordsFile = config('asswords.asswords-file');
+        $assWords = $this->wordProvider->getAssWords();
 
-        $words = file($asswordsFile);
-
-        return collect($words)->random();
+        return $assWords->random();
     }
 }

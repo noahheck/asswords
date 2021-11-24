@@ -24,13 +24,24 @@
     </head>
     <body class="d-flex flex-column min-vh-100">
 
-        <nav class="navbar fixed-top navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ route('ass') }}">Ass Words</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <span class="navbar-text d-none d-md-block"> | </span>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('validate') }}">Validator</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container main-content">
 
             @yield('content')
 

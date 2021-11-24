@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\AssController::class, 'ass'])->name('ass');
+Route::get('/validate', [\App\Http\Controllers\AssController::class, 'validator'])->name('validate');
