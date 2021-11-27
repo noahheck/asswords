@@ -7,7 +7,7 @@
         <meta property="og:url" content="{{ url() ->current() }}">
         <meta property="og:title" content="Ass Words">
         <meta property="og:type" content="website">
-        <meta property="og:description" content="Ass Words as a service - Display an Ass Word every time you visit the site!!!">
+        <meta property="og:description" content="The world's very best Ass Words as a Service (AWAAS) platform!!!">
         <meta property="og:image" content="{{ asset('/images/cassandra/cassandra_md.png') }}">
 
 
