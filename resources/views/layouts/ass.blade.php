@@ -8,7 +8,7 @@
         <meta property="og:title" content="Ass Words">
         <meta property="og:type" content="website">
         <meta property="og:description" content="Ass Words as a service - Display an Ass Word every time you visit the site!!!">
-        <meta property="og:image" content="">
+        <meta property="og:image" content="{{ asset('/images/cassandra/cassandra_md.png') }}">
 
 
         <title>Ass Words</title>
