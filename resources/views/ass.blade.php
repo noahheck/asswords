@@ -8,7 +8,7 @@
 
             <div class="row mb-3">
                 <div class="col-12 col-sm-4 text-center">
-                    <img src="{{ asset('images/cassandra/cassandra_md.png') }}" style="max-height: 100%; max-width: 100%;" class="rounded-circle">
+                    <img alt="Cassandra, the world's very best curator of Ass Words" src="{{ asset('images/cassandra/cassandra_md.png') }}" style="max-height: 100%; max-width: 100%;" class="rounded-circle">
                 </div>
                 <div class="col-12 col-sm-8">
                     <h1>Welcome to Ass Words!</h1>
