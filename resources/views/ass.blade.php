@@ -2,9 +2,20 @@
 
 @section('content')
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mt-3">
 
         <div class="col-12 col-md-7">
+
+            <div class="row mb-3">
+                <div class="col-12 col-sm-4 text-center">
+                    <img src="{{ asset('images/cassandra/cassandra_md.png') }}" style="max-height: 100%; max-width: 100%;" class="rounded-circle">
+                </div>
+                <div class="col-12 col-sm-8">
+                    <h1>Welcome to Ass Words!</h1>
+                    <p class="lead">The world's very best Ass Words as a Service (AWAAS) platform!</p>
+                </div>
+            </div>
+
 
             <div class="card shadow-sm">
                 <div class="card-header">
