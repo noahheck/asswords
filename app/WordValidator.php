@@ -39,6 +39,7 @@ class WordValidator
 
     private function checkStringIsValidAssWord($potentialAssWord)
     {
-        return $this->wordProvider->getAssWords()->contains($potentialAssWord);
+        return $this->wordProvider->getAssWords()->contains($potentialAssWord)
+            || $this->wordProvider->getAssWords()->contains(\Str::lower($potentialAssWord));
     }
 }

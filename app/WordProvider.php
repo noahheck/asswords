@@ -25,9 +25,15 @@ class WordProvider
 
         $assWordsFile = config('asswords.asswords-file');
 
-        $this->assWords = collect(file($assWordsFile))->map(function($assWord, $key) {
+        $assWords = collect(file($assWordsFile))->map(function($assWord, $key) {
             return trim($assWord);
         });
+
+        $caseInsensitiveAssWords = $assWords->map(function($assWord, $key) {
+            return \Str::lower($assWord);
+        });
+
+        $this->assWords = $assWords->concat($caseInsensitiveAssWords)->unique()->values();
 
         return $this->assWords;
     }
